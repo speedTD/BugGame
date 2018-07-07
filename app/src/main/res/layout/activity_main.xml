@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon2"
+        android:layout_alignParentStart="true"
+        android:text="Result"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Text_Monney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="74dp"
+        android:layout_marginTop="23dp"
+        android:text="30000"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Text_Monney"
+        android:layout_marginEnd="33dp"
+        android:text="$"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <GridView
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:id="@+id/girdview_id"
+        android:layout_width="430dp"
+        android:layout_height="240dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <ImageView
+        android:background="#d317f4"
+        android:layout_below="@+id/girdview_id"
+        android:layout_toRightOf="@+id/txt_Result"
+        android:src="@drawable/iconchange1"
+        android:id="@+id/icon1"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageView
+        android:background="#0051ff"
+        android:layout_below="@+id/girdview_id"
+        android:layout_toRightOf="@+id/icon1"
+        android:src="@drawable/iconchange2"
+        android:id="@+id/icon2"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageView
+        android:background="#04ff00"
+        android:layout_below="@+id/girdview_id"
+        android:layout_toRightOf="@+id/icon2"
+        android:src="@drawable/iconchange3"
+        android:id="@+id/icon3"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Text_Monney"
+        android:layout_marginBottom="99dp"
+        android:text="Ran" />
+
+</RelativeLayout>
